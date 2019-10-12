@@ -1,0 +1,12 @@
+def deleteNode(curr_node):
+    #code here
+    if curr_node==None or curr_node.next==None:
+        return None
+    curr_node.data= curr_node.next.data
+    # x.data,y.data = y.data,x.data
+    
+    if curr_node.next.next!=None:
+        curr_node.next=curr_node.next.next
+    else:
+        curr_node.next = None
+    "# delete-without-head-pt" 
